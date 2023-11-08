@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <title>Programa de Empréstimo</title>
+</head>
+<body>
+    <h1 class="bg-primary text-white text-center p-3 mb-0">Programa de Empréstimo para Colaboradores</h1>
+    <form class="bg-white max-width-400 mx-auto p-5 rounded shadow">
+        <label for="name" class="font-weight-bold">Nome do Colaborador:</label>
+        <input type="text" id="name" class="form-control mb-3" required>
+
+        <label for="admissionDate" class="font-weight-bold">Data de Admissão:</label>
+        <input type="date" id="admissionDate" class="form-control mb-3" required>
+
+        <label for="salary" class="font-weight-bold">Salário Atual:</label>
+        <input type="number" id="salary" class="form-control mb-3" step="1" min="0" required>
+
+        <label for="loanAmount" class="font-weight-bold">Valor do Empréstimo:</label>
+        <input type="number" id="loanAmount" class="form-control mb-3" step="1" min="0" required>
+
+        <button type="button" class="btn btn-warning btn-block" onclick="solicitarEmprestimo()">Solicitar Empréstimo</button>
+    </form>
+
+    <div id="result" class="bg-light max-width-400 mx-auto p-5 rounded shadow" style="display: none;">
+        <h2 class="mb-0">Opções de Notas:</h2>
+        <div id="notasMaiorValor" class="mt-3"></div>
+        <div id="notasMenorValor" class="mt-3"></div>
+        <div id="notasMeioAMeio" class="mt-3"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Aniversariantes do Mês</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Aniversariantes do Mês</h1>
+        <div class="card">
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="consultoresFile">Selecione o arquivo de consultores:</label>
+                    <input type="file" class="form-control-file" id="consultoresFile" accept=".txt">
+                </div>
+                <button class="btn btn-primary" id="processButton">Processar</button>
+                <div class="result-container mt-3">
+                    <h2>Aniversariantes do Mês Corrente:</h2>
+                    <ul class="list-group" id="aniversariantesList"></ul>
+                    <button class="btn btn-warning mt-3" id="saveButton">Salvar Aniversariantes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
